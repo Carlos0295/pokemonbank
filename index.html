@@ -13,5 +13,39 @@
     <span class="navbar-brand mb-0 h1">POKEMON BANK</span>
   </div>
 </nav>
+<div class="py-5 px-4 d-flex justify-content-between align-items-center"><a href="#">REGRESAR</a> GRAFICO TRANSACCIONES</div>
+<div class="p-4">
+    <div>
+  <canvas id="myChart"></canvas>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('myChart');
+  const transacciones  = [
+    'Retiros',
+    'Abonos',
+    'Consulta de saldo',
+    'Pago de servicios'
+  ]
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: transacciones,
+      datasets: [{
+        label: 'Cantidad',
+        data: [5, 2, 2, 4],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
 </body>
 </html>
