@@ -1,51 +1,22 @@
 <!DOCTYPE html>
-<html lang="ES">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POKEMON BANK</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/98cd0d0703.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Pokemon Bank</title>
 </head>
 <body>
-  <nav class="navbar bg-body-tertiary">
-  <div class="container-fluid">
-    <span class="navbar-brand mb-0 h1">POKEMON BANK</span>
-  </div>
-</nav>
-<div class="py-5 px-4 d-flex justify-content-between align-items-center"><a href="#">REGRESAR</a> GRAFICO TRANSACCIONES</div>
-<div class="p-4">
-    <div>
-  <canvas id="myChart"></canvas>
-</div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-  const ctx = document.getElementById('myChart');
-  const transacciones  = [
-    'Retiros',
-    'Abonos',
-    'Consulta de saldo',
-    'Pago de servicios'
-  ]
-  new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: transacciones,
-      datasets: [{
-        label: 'Cantidad',
-        data: [5, 2, 2, 4],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
-    }
-  });
-</script>
+    <div class="text-center">
+        <a href="pages/login.html" class="boton">
+            <i class="fa-solid fa-bounce fa-piggy-bank fa-2x logo"></i>
+            <div class="logo-text">Pokemon Bank</div>
+        </a>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
